@@ -7,18 +7,17 @@ class Storage {
   getItems() {
     return this.#items;
   }
+
   addItem(newItem) {
     this.#items.push(newItem);
    
-    }
+  }
   removeItem(itemToRemove) {
       if (this.#items.indexOf(itemToRemove) >= 0) {
          this.#items.splice(this.#items.indexOf(itemToRemove), 1);
       }
-     
     }
-
-  }
+ }
 
 
 
